@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay!</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-color: #f2f5ed;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%237a9c57' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        font-family: 'Bubblegum Sans', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7a9c57;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container {
+        background-color: #e8f0d5;
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: 0 10px 25px rgba(122, 156, 87, 0.2);
+        border: 8px solid #afcfa3;
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        border: 3px dashed #d1dea9;
+        border-radius: 26px;
+        pointer-events: none;
+    }
+
+    h1 {
+        color: #7a9c57;
+        font-size: 2.5em;
+        text-shadow: 3px 3px 0px #d1dea9;
+        margin-bottom: 20px;
+        transform: rotate(-2deg);
+    }
+
+    p {
+        font-size: 1.2em;
+        margin: 15px 0;
+        color: #7a9c57;
+    }
+
+    .dancing-text {
+        display: inline-block;
+        color: #7a9c57;
+        font-weight: bold;
+    }
+
+    @keyframes dance {
+        0% { transform: translateY(0) rotate(0deg); }
+        100% { transform: translateY(-5px) rotate(2deg); }
+    }
+
+    img {
+        margin-top: 30px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+        border: 5px solid #d1dea9;
+        box-shadow: 0 10px 20px rgba(122, 156, 87, 0.15);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .container {
+            padding: 20px;
+            border-width: 5px;
+        }
+
+        .container::before {
+            border-width: 2px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.6em;
+        }
+
+        p {
+            font-size: 0.95em;
+        }
+
+        img {
+            max-width: 90%;
+        }
+    }
+        /* Footer styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+     font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: var(--primary-color); /* olive green text */
+    background-color: rgba(242, 245, 237, 0.7); /* semi-transparent light cream */
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    border-top: 1px solid rgba(168, 190, 138, 0.5); /* soft green border */
+}
+
+.footer span {
+    font-weight: 600;
+    color: var(--primary-color); /* olive green accent */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I KNEW YOU'D SAY YES!</h1>
+        <h1>♡(˃͈ દ ˂͈ ༶ )</h1>
+        <p class="dancing-text">Eeeeeek! I'm so exciteddd</p>
+        <p>Let's go makan <span class="dancing-text">all the yummy stuff</span></p>
+        <p>And do <span class="dancing-text">crazy fun things sama-sama</span></p>
+
+        <img src="jilat.gif" alt="Celebration GIF">
+    </div>
+        <!-- Footer -->
+    <div class="footer">Made by <span>Lellobyy</span></div>
+</body>
+</html>
